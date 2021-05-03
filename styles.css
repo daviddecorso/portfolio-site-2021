@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Archivo+Black&family=Rajdhani:wght@300;400&display=swap");
+
+@font-face {
+  font-family: "Swiss721BT";
+  src: url("fonts/Swiss-721-BT-Font.ttf");
+}
+
+:root {
+  --gutter: 2vw;
+  --bg-color: #0f0f0f;
+  --text-color: #dcdcdd;
+  --vert-elem-spacing: 10vh;
+}
+
+html {
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 2056px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gutter) 0;
+  left: calc(var(--gutter) * 2);
+  right: calc(var(--gutter) * 2);
+  z-index: 4;
+
+  font-family: Abel;
+}
+
+header a {
+  text-decoration-color: rgba(0, 0, 0, 0);
+  text-decoration-thickness: 0.08em;
+  color: var(--text-color);
+}
+
+header a:hover {
+  text-decoration-color: var(--text-color);
+  transition: all 0.2s ease-in;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Archivo Black;
+
+  margin-left: 20vh;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-family: Abel;
+
+  margin-left: calc(var(--gutter));
+}
+
+#projects {
+  margin-left: calc(var(--gutter) * 2);
+}
+
+#intro-title {
+  position: relative;
+  margin-top: 30vh;
+  margin-bottom: 0;
+  margin-right: calc(100% / 12);
+  font-size: 5.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#intro-body {
+  text-align: right;
+  font-size: 2rem;
+  font-family: Abel;
+  line-height: 1.2;
+  font-weight: normal;
+
+  position: relative;
+  margin-top: var(--vert-elem-spacing);
+  margin-left: calc(55vw - (var(--gutter) * 4));
+  max-width: 45vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer {
+  margin-top: 30vh;
+}
+
+#project-title {
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+}
+
+.project-subtitle {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: Archivo Black;
+  font-size: 5.5rem;
+  padding-top: 10%;
+  left: calc(60vw);
+  color: var(--text-color);
+}
+
+.proj-img {
+  width: 60vw;
+  height: auto;
+  outline: #ec004d solid 3px;
+}
+
+#body {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#particles-js {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.center-col {
+  flex-basis: calc(100% / 3);
+}
+
+.name-nav {
+  text-align: left;
+}
+
+.folio-nav {
+  text-align: center;
+  user-select: none;
+}
+
+.about-nav {
+  text-align: right;
+}
