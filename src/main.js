@@ -1,5 +1,4 @@
 const content = document.getElementById("body");
-console.log(content);
 
 const ss = new SmoothScroll({
   container: content,
