@@ -18,7 +18,7 @@
 html {
   background: var(--bg-color);
   color: var(--text-color);
-  height: 2756px;
+  height: 3256px;
 }
 
 header {
@@ -104,8 +104,9 @@ header a:hover {
 }
 
 #project-title {
-  font-size: 4rem;
-  margin: 0 0 1rem 0;
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
 }
 
 .project-subtitle {
@@ -113,6 +114,7 @@ header a:hover {
   text-transform: uppercase;
   font-family: Archivo Black;
   font-size: 3.5rem;
+  max-width: 40vw;
   /*   padding-top: 10%; */
 
   color: var(--text-color);
@@ -140,7 +142,11 @@ header a:hover {
 }
 
 .pt-left {
-  max-width: 40vw;
+  max-width: 50vw;
+}
+
+#cv-text {
+  padding-top: 5rem;
 }
 
 .project-div {
@@ -153,13 +159,13 @@ header a:hover {
 }
 
 #covid-ss {
-  width: 40vw;
+  width: 35vw;
   height: auto;
 }
 
 .pi-right {
-  position: absolute;
-  right: calc(var(--gutter) * 2);
+  position: relative;
+  margin-left: calc(100% - 35vw - (var(--gutter) * 2));
 }
 
 #body {
