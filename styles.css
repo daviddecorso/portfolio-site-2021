@@ -15,6 +15,7 @@
   --vert-elem-spacing: 10vh;
   --grey: #6d6d6d;
   --transparent: rgba(0, 0, 0, 0);
+  --button-hover: rgba(62, 62, 62, 0.5);
 }
 
 html {
@@ -104,6 +105,107 @@ header a:hover {
   flex-direction: column;
 }
 
+#about-me {
+  position: relative;
+  font-size: 4rem;
+}
+
+#about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 30vh auto;
+  gap: 0 50px;
+}
+
+#self-pic {
+  height: 400px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-title {
+  max-width: 60vw;
+  margin-bottom: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#experience {
+  display: flex;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exp-date {
+  font-size: 1.3rem;
+}
+
+.exp-text {
+  font-size: 1.75rem;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.tab-button {
+  background-color: transparent;
+  text-decoration: none;
+  border-color: var(--transparent);
+  color: var(--text-color);
+  font-family: Abel;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-button:hover {
+  background-color: var(--button-hover);
+  transition: all 0.4s ease-in-out;
+}
+
+.tab-is-active {
+  /* text-decoration: underline; */
+  border-left: 2px solid #ffffff;
+}
+
+.tab-is-inactive {
+  border-left: 2px solid #1f1f1f;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-left: 8px;
+}
+
+ul li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+}
+
+.about-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Archivo Black;
+}
+
 .body-text {
   font-size: 2rem;
   font-family: Abel;
@@ -111,6 +213,7 @@ header a:hover {
   font-weight: normal;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  max-width: 1100px;
 }
 
 #intro-body {
