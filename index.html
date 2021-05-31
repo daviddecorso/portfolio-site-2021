@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="src/native.smooth.scroll.umd.min.js"></script>
+    <!-- <script src="src/native.smooth.scroll.umd.min.js"></script> -->
     <script>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("Particles loaded.");
@@ -27,8 +27,8 @@
       <h1 class="about-nav center-col"><a href="about.html">About</a></h1>
     </header>
 
-    <main id="body">
-      <div class="content" id="content">
+    <main asscroll-container id="body">
+      <div id="content">
         <div>
           <h2 id="intro-title" class="title">
             <span>Full-stack</span>
@@ -138,12 +138,54 @@
           </div>
           <div class="project-div">
             <h2 id="project-title" class="subtitle">Other PROJECTS:</h2>
-            <span class="body-text">Influence game: </span>
+            <div style="display: flex">
+              <span class="body-text other-title">BuyAndSell Plugin: </span>
+              <div class="other-proj">
+                <span class="body-text"
+                  >Easy-to-use Minecraft server plugin that lets users buy and
+                  sell items. Hooks in with Vault to accommodate diverse economy
+                  types.</span
+                >
+                <p class="body-text emphasis-text">Java, Git</p>
+              </div>
+            </div>
+            <div style="display: flex">
+              <span class="body-text other-title">Influence Game: </span>
+              <div class="other-proj">
+                <span class="body-text"
+                  >(In progress) Strategy browser game written in native
+                  JavaScript and HTML5.</span
+                >
+                <p class="body-text emphasis-text">
+                  JavaScript, HTML5 Canvas, CSS
+                </p>
+              </div>
+            </div>
           </div>
+          <footer>
+            <div class="contact">
+              <p class="body-text">
+                <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+                  >LinkedIn</a
+                >
+              </p>
+              <p class="body-text">
+                <a href="mailto:david@daviddecorso.com"
+                  >david@daviddecorso.com</a
+                >
+              </p>
+
+              <p class="body-text">
+                <a href="http://www.github.com/daviddecorso">Github</a>
+              </p>
+            </div>
+            <h1 class="in-touch">Get in touch</h1>
+          </footer>
+          <div id="bottom"><p>Hi!</p></div>
         </div>
       </div>
     </main>
   </body>
 
-  <script src="src/main.js"></script>
+  <script type="module" src="src/main.js"></script>
 </html>

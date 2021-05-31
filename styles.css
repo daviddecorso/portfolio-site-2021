@@ -48,6 +48,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.my-scrollbar-handle {
+  color: var(--grey);
+}
+
 header {
   display: flex;
   position: fixed;
@@ -143,7 +147,7 @@ header a:hover {
 }
 
 .exp-text {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 .tabs {
@@ -353,6 +357,43 @@ body {
 
 .emphasis-text {
   color: var(--red-pink);
+}
+
+.other-title {
+  min-width: 300px;
+}
+
+.other-proj {
+  margin-right: var(--gutter);
+}
+
+footer {
+  margin-top: 50vh;
+  position: relative;
+}
+
+.in-touch {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-family: Archivo Black;
+  text-align: center;
+  letter-spacing: 45px;
+  margin-top: 3vh;
+  margin-bottom: 0px;
+}
+
+.contact {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.body-text a {
+  color: var(--text-color);
+}
+
+#bottom {
+  margin-top: 30vh;
 }
 
 @media screen and (max-width: 600px) {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="src/native.smooth.scroll.umd.min.js"></script>
+    <!-- <script src="src/native.smooth.scroll.umd.min.js"></script> -->
     <script>
       particlesJS.load("particles-js", "particles.json", function () {
         console.log("Particles loaded.");
@@ -27,7 +27,7 @@
       <h1 class="about-nav center-col"><a href="about.html">About</a></h1>
     </header>
 
-    <main id="body">
+    <main asscroll-container id="body">
       <div id="about-me">
         <div id="about-content">
           <p></p>
@@ -55,7 +55,7 @@
           </div>
           <div class="body-text">
             <div id="exp1" style="padding-left: 50px; max-width: 700px">
-              <b></b>Assistant Data Scientist @ Siemens Energy
+              <b>Assistant Data Scientist @ Siemens Energy</b>
               <p class="exp-date">Oct 2020 - Present</p>
               <div class="exp-text">
                 <ul>
@@ -76,7 +76,7 @@
               class="is-hidden"
               style="padding-left: 50px; max-width: 700px"
             >
-              <b></b>Research Assistant @ UCF A.R.E.A. 67 Research Lab
+              <b>Research Assistant @ UCF A.R.E.A. 67 Research Lab</b>
               <p class="exp-date">Oct 2019 - Apr 2020</p>
               <div class="exp-text">
                 <ul>
@@ -94,8 +94,26 @@
             </div>
           </div>
         </div>
+        <footer>
+          <div class="contact">
+            <p class="body-text">
+              <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+                >LinkedIn</a
+              >
+            </p>
+            <p class="body-text">
+              <a href="mailto:david@daviddecorso.com">david@daviddecorso.com</a>
+            </p>
+
+            <p class="body-text">
+              <a href="http://www.github.com/daviddecorso">Github</a>
+            </p>
+          </div>
+          <h1 class="in-touch">Get in touch</h1>
+        </footer>
       </div>
     </main>
   </body>
-  <script src="src/main.js"></script>
+  <script type="module" src="src/main.js"></script>
+  <script src="src/tabs.js"></script>
 </html>
