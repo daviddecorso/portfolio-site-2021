@@ -33,15 +33,30 @@
           <h2 id="intro-title" class="title">
             <span>Full-stack</span>
             <span>Web Dev /</span>
-            <span>Data Scientist</span>
+            <span id="data-scientist">Data Scientist</span>
           </h2>
-          <div id="intro-body" class="body-text">
-            <span>I am a software developer based in Orlando, FL.</span>
-            <span
-              >I have experience using technologies like React, Node.js,
-              Javascript, HTML5, and CSS to build compelling, modern experiences
-              for the web.</span
-            >
+          <div id="intro-body" class="body-text intro-body">
+            <p id="intro-body-text">
+              I am a software developer based in Orlando, FL. I have experience
+              using technologies like React, Node.js, Javascript, HTML5, and CSS
+              to build compelling, modern experiences for the web.
+            </p>
+          </div>
+          <div id="data-intro-body" class="body-text intro-body">
+            <p id="data-intro-body-text" class="is-hidden">
+              <span
+                >I am a <span class="highlight">data scientist</span> based in
+                Orlando, FL.</span
+              ><span
+                >I have experience using technologies like
+                <span class="highlight"
+                  >Tableau, Alteryx, Python, and Pandas</span
+                >
+                to help companies <span class="highlight">analyze</span> and
+                <span class="highlight">visualize</span> trends in their
+                data.</span
+              >
+            </p>
           </div>
         </div>
         <div class="spacer"></div>
@@ -113,13 +128,11 @@
               <div class="logos-div">
                 <a href="https://github.com/daviddecorso/covid-tweet-viz">
                   <img
-                    id="github-logo"
                     class="logo-img"
                     src="img/github.png"
                     alt="Github link"
                   />
                   <img
-                    id="github-logo"
                     class="logo-img"
                     src="img/GitHub_Logo_White.png"
                     alt="Github link"
@@ -139,7 +152,11 @@
           <div class="project-div">
             <h2 id="project-title" class="subtitle">Other PROJECTS:</h2>
             <div style="display: flex">
-              <span class="body-text other-title">BuyAndSell Plugin: </span>
+              <span class="body-text other-title"
+                ><a href="https://github.com/daviddecorso/BuyAndSell"
+                  >BuyAndSell Plugin:</a
+                ></span
+              >
               <div class="other-proj">
                 <span class="body-text"
                   >Easy-to-use Minecraft server plugin that lets users buy and
@@ -150,7 +167,11 @@
               </div>
             </div>
             <div style="display: flex">
-              <span class="body-text other-title">Influence Game: </span>
+              <span class="body-text other-title"
+                ><a href="https://github.com/daviddecorso/Influence-game"
+                  >Influence Game:</a
+                ></span
+              >
               <div class="other-proj">
                 <span class="body-text"
                   >(In progress) Strategy browser game written in native
@@ -162,30 +183,29 @@
               </div>
             </div>
           </div>
-          <footer>
-            <div class="contact">
-              <p class="body-text">
-                <a href="https://www.linkedin.com/in/david-decorso-226992151/"
-                  >LinkedIn</a
-                >
-              </p>
-              <p class="body-text">
-                <a href="mailto:david@daviddecorso.com"
-                  >david@daviddecorso.com</a
-                >
-              </p>
-
-              <p class="body-text">
-                <a href="http://www.github.com/daviddecorso">Github</a>
-              </p>
-            </div>
-            <h1 class="in-touch">Get in touch</h1>
-          </footer>
-          <div id="bottom"><p>Hi!</p></div>
         </div>
+        <footer>
+          <div class="contact">
+            <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+              ><img
+                id="linkedin-img"
+                src="img/LnLogoNoBG.png"
+                alt="David DeCorso's LinkedIn"
+            /></a>
+            <p class="body-text">
+              <a href="mailto:david@daviddecorso.com">david@daviddecorso.com</a>
+            </p>
+            <a id="github-logo" href="https://github.com/daviddecorso/"
+              ><img src="img/github.png" alt="David DeCorso's Github"
+            /></a>
+          </div>
+          <h1 class="in-touch">Get in touch</h1>
+        </footer>
+        <div id="bottom"><p>Hi!</p></div>
       </div>
     </main>
   </body>
 
   <script type="module" src="src/main.js"></script>
+  <script src="src/hover.js"></script>
 </html>

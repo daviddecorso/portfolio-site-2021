@@ -102,7 +102,7 @@ header a:hover {
 #intro-title {
   position: relative;
   margin-top: 30vh;
-  margin-bottom: 0;
+  margin-bottom: var(--vert-elem-spacing);
   margin-right: calc(100% / 12);
   font-size: 5.5rem;
   display: flex;
@@ -140,6 +140,7 @@ header a:hover {
   max-width: 60vw;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 24vh;
 }
 
 .exp-date {
@@ -220,16 +221,25 @@ ul li:before {
   max-width: 1100px;
 }
 
-#intro-body {
+.intro-body {
   text-align: right;
 
   position: relative;
-  margin-top: var(--vert-elem-spacing);
+  /* margin-top: var(--vert-elem-spacing); */
   margin-left: calc(55vw - (var(--gutter) * 4));
   max-width: 45vw;
 
   display: flex;
   flex-direction: column;
+}
+
+#data-scientist {
+  display: block;
+  max-width: 820px;
+}
+
+#data-intro-body {
+  margin-top: -5px;
 }
 
 .spacer {
@@ -359,16 +369,22 @@ body {
   color: var(--red-pink);
 }
 
+.highlight {
+  color: black;
+  background-color: white;
+}
+
 .other-title {
   min-width: 300px;
 }
 
 .other-proj {
   margin-right: var(--gutter);
+  margin-bottom: 5vh;
 }
 
 footer {
-  margin-top: 50vh;
+  margin-top: -5vh;
   position: relative;
 }
 
@@ -396,6 +412,15 @@ footer {
   margin-top: 30vh;
 }
 
+#github-logo {
+  place-self: center;
+}
+
+#linkedin-img {
+  width: 64px;
+  height: 64px;
+}
+
 @media screen and (max-width: 600px) {
   #intro-title {
     font-size: 3rem;
@@ -410,7 +435,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  #intro-body {
+  .intro-body {
     margin-left: 10vw;
     max-width: 84vw;
   }
@@ -449,5 +474,17 @@ footer {
 
   .proj-img {
     display: none;
+  }
+
+  #project-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    margin-left: calc((var(--gutter)) * -1);
+    margin-right: var(--gutter);
+  }
+
+  .subtitle {
+    margin-left: 0px;
   }
 }
