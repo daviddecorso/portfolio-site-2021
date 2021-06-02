@@ -236,10 +236,12 @@ ul li:before {
 #data-scientist {
   display: block;
   max-width: 820px;
+  transition: all 0.2s ease-in;
+  background-size: 100% 0.2rem;
 }
 
 #data-intro-body {
-  margin-top: -5px;
+  margin-top: -8px;
 }
 
 .spacer {
@@ -258,7 +260,6 @@ ul li:before {
   font-family: Archivo Black;
   font-size: 3.5rem;
   max-width: 39vw;
-  /*   padding-top: 10%; */
 
   color: var(--text-color);
 }
@@ -404,6 +405,10 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.contact-mobile {
+  display: none;
+}
+
 .body-text a {
   color: var(--text-color);
 }
@@ -421,7 +426,50 @@ footer {
   height: 64px;
 }
 
-@media screen and (max-width: 600px) {
+.flex-div {
+  display: flex;
+}
+
+.mobile-spacer {
+  display: none;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  #intro-title {
+    margin-top: 20vh;
+    font-size: 5rem;
+    margin-bottom: calc(var(--vert-elem-spacing) / 2);
+  }
+
+  .intro-body {
+    margin-left: calc(52vw - (var(--gutter) * 4));
+    max-width: 53vw;
+  }
+
+  .spacer {
+    margin-top: 14vh;
+  }
+
+  .proj-img {
+    padding-top: 5%;
+  }
+
+  .project-div {
+    margin-bottom: 38vh;
+  }
+
+  footer {
+    margin-top: -15vh;
+  }
+
+  .in-touch {
+    font-size: 5rem;
+    letter-spacing: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
   #intro-title {
     font-size: 3rem;
     margin-top: 17vh;
@@ -440,6 +488,10 @@ footer {
     max-width: 84vw;
   }
 
+  .project-div {
+    margin-bottom: 10vh;
+  }
+
   .spacer {
     margin-top: 20vh;
   }
@@ -451,15 +503,17 @@ footer {
   .project-subtitle {
     position: relative;
     left: auto;
+    font-size: 2rem;
   }
 
   .project-text {
     position: relative;
     left: auto;
+    padding-top: 0;
   }
 
   .proj-img-mobile {
-    width: 65vw;
+    width: 45vw;
     height: auto;
     margin-left: -2vw;
     margin-bottom: 1.5rem;
@@ -472,19 +526,81 @@ footer {
     place-content: center;
   }
 
+  #covid-mobile-img {
+    width: 85vw;
+  }
+
   .proj-img {
     display: none;
   }
 
   #project-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
     margin-left: calc((var(--gutter)) * -1);
     margin-right: var(--gutter);
+    font-weight: bold;
   }
 
   .subtitle {
     margin-left: 0px;
+  }
+
+  #cv-text {
+    padding-top: 0px;
+  }
+
+  .pt-left {
+    max-width: 100vw;
+  }
+
+  .flex-div {
+    display: block;
+  }
+
+  .mobile-spacer {
+    display: block;
+    margin-bottom: 30vh;
+  }
+
+  .in-touch {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contact-mobile p {
+    text-align: center;
+  }
+
+  .mobile-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  #bottom {
+    margin-top: 10vh;
+  }
+
+  #self-pic {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  #about-content {
+    display: block;
+    margin-top: 30vh;
   }
 }
