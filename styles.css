@@ -128,7 +128,7 @@ header a:hover {
   margin-right: auto;
 }
 
-.experience-title {
+#experience-title {
   max-width: 60vw;
   margin-bottom: 1.2rem;
   margin-left: auto;
@@ -203,6 +203,10 @@ ul li:before {
   content: "▹";
   position: absolute;
   left: 0;
+}
+
+li {
+  margin-bottom: 20px;
 }
 
 .about-title {
@@ -435,6 +439,25 @@ footer {
   margin-bottom: 0px;
 }
 
+#exp1 {
+  padding-left: 10px;
+  max-width: 700px;
+}
+
+#exp2 {
+  padding-left: 10px;
+  max-width: 700px;
+}
+
+#exp3 {
+  padding-left: 10px;
+  max-width: 700px;
+}
+
+#exp-container {
+  margin-left: 10vw;
+}
+
 @media screen and (max-width: 1280px) {
   #intro-title {
     margin-top: 20vh;
@@ -564,6 +587,10 @@ footer {
     margin-bottom: 30vh;
   }
 
+  #scroll-mobile-hack {
+    margin-bottom: 40vh;
+  }
+
   .in-touch {
     font-size: 2.5rem;
     letter-spacing: normal;
@@ -596,11 +623,62 @@ footer {
   }
 
   .about-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   #about-content {
     display: block;
-    margin-top: 30vh;
+    margin-top: 25vh;
+    margin-left: var(--gutter);
+  }
+
+  #experience {
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 0;
+    max-width: 90vw;
+  }
+
+  #experience-title {
+    font-size: 3.5rem;
+    margin-left: calc(var(--gutter) * 3);
+  }
+
+  .tabs {
+    flex-direction: row;
+  }
+
+  .tabs button {
+    text-align: center;
+  }
+
+  .tab-is-active {
+    /* text-decoration: underline; */
+    border-left: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .tab-is-inactive {
+    border-left: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #1f1f1f;
+  }
+
+  #exp1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #exp2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #exp3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #exp-container {
+    margin-left: 0;
   }
 }

@@ -32,7 +32,7 @@
         <div id="about-content">
           <p></p>
           <p></p>
-          <img id="self-pic" src="img/pic smaller.jpg" alt="Headshot" />
+          <img id="self-pic" src="img/pic smaller.jpg" alt="Picture of me!" />
           <div>
             <h2 class="about-title">About Me</h2>
             <p class="body-text">
@@ -43,74 +43,77 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="subtitle experience-title">Experience</h3>
-        <div id="experience">
-          <div class="tabs">
-            <button id="tab1" class="tab-button tab-is-active">
-              Siemens Energy</button
-            ><button id="tab2" class="tab-button tab-is-inactive">DHMC</button>
-            <button id="tab3" class="tab-button tab-is-inactive">
-              UCF Undergraduate Research
-            </button>
-          </div>
-          <div class="body-text">
-            <div id="exp1" style="padding-left: 50px; max-width: 700px">
-              <b>Assistant Data Scientist @ Siemens Energy</b>
-              <p class="exp-date">Oct 2020 - Present</p>
-              <div class="exp-text">
-                <ul>
-                  <li>
-                    Processed, analyzed, and visualized sales data for business
-                    leadership.
-                  </li>
-                  <li>Worked with technologies like Tableau and Alteryx.</li>
-                  <li>
-                    Worked remotely as part of an international team with an
-                    AGILE/SCRUM framework.
-                  </li>
-                </ul>
-              </div>
+        <div id="exp-container">
+          <h3 id="experience-title" class="subtitle">Experience</h3>
+          <div id="experience">
+            <div class="tabs">
+              <button id="tab1" class="tab-button tab-is-active">
+                Siemens Energy</button
+              ><button id="tab2" class="tab-button tab-is-inactive">
+                DHMC
+              </button>
+              <button id="tab3" class="tab-button tab-is-inactive">
+                UCF Undergrad Research
+              </button>
             </div>
-            <div
-              id="exp2"
-              class="is-hidden"
-              style="padding-left: 50px; max-width: 700px"
-            >
-              <b>Plugin Development @ Dark Helmet Minecraft</b>
-              <p class="exp-date">May 2020 - Aug 2020</p>
-              <div class="exp-text">
-                <ul>
-                  <li>
-                    Used the Spigot API to develop and maintain plugins for a
-                    Minecraft server with thousands of unique players.
-                  </li>
-                  <li>
-                    Worked collaboratively to fix bugs and resolve feature
-                    requests in a large codebase.
-                  </li>
-                  <li>Worked with a Github repository using pull requests.</li>
-                </ul>
+            <div class="body-text">
+              <div id="exp1">
+                <b>Assistant Data Scientist @ Siemens Energy</b>
+                <p class="exp-date">Oct 2020 - Present</p>
+                <div class="exp-text">
+                  <ul>
+                    <li>
+                      Processed, analyzed, and visualized sales data for
+                      business leadership.
+                    </li>
+                    <li>
+                      Worked with technologies like Tableau and Alteryx to
+                      create data pipelines and dashboards.
+                    </li>
+                    <li>
+                      Worked remotely as part of an international team with an
+                      AGILE/SCRUM framework.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div
-              id="exp3"
-              class="is-hidden"
-              style="padding-left: 50px; max-width: 700px"
-            >
-              <b>Research Assistant @ UCF A.R.E.A. 67 Research Lab</b>
-              <p class="exp-date">Oct 2019 - Apr 2020</p>
-              <div class="exp-text">
-                <ul>
-                  <li>
-                    Fixed bugs in synthetic concurrent data structure
-                    benchmarking software written in C.
-                  </li>
-                  <li>
-                    Implemented high performance concurrent data structures and
-                    operations from novel research papers.
-                  </li>
-                  <li>Worked with C/Java concurrent programming libraries.</li>
-                </ul>
+              <div id="exp2" class="is-hidden">
+                <b>Plugin Development @ Dark Helmet Minecraft</b>
+                <p class="exp-date">May 2020 - Aug 2020</p>
+                <div class="exp-text">
+                  <ul>
+                    <li>
+                      Used the Spigot API to develop and maintain plugins for a
+                      Minecraft server with thousands of unique players.
+                    </li>
+                    <li>
+                      Worked collaboratively to fix bugs and resolve feature
+                      requests in a large codebase.
+                    </li>
+                    <li>
+                      Worked with a Github repository using pull requests.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="exp3" class="is-hidden">
+                <b>Research Assistant @ UCF A.R.E.A. 67 Research Lab</b>
+                <p class="exp-date">Oct 2019 - Apr 2020</p>
+                <div class="exp-text">
+                  <ul>
+                    <li>
+                      Fixed bugs in synthetic concurrent data structure
+                      benchmarking software written in C.
+                    </li>
+                    <li>
+                      Implemented high performance concurrent data structures
+                      and operations from novel research papers.
+                    </li>
+                    <li>
+                      Worked with C/Java concurrent programming libraries.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -130,8 +133,30 @@
               ><img src="img/github.png" alt="David DeCorso's Github"
             /></a>
           </div>
+          <div class="contact-mobile">
+            <div class="mobile-logos">
+              <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+                ><img
+                  id="linkedin-img"
+                  src="img/LnLogoNoBG.png"
+                  alt="David DeCorso's LinkedIn" /></a
+              ><a id="github-logo" href="https://github.com/daviddecorso/"
+                ><img src="img/github.png" alt="David DeCorso's Github"
+              /></a>
+            </div>
+            <p class="body-text">
+              <a href="mailto:david@daviddecorso.com">david@daviddecorso.com</a>
+            </p>
+          </div>
           <h1 class="in-touch">Get in touch</h1>
         </footer>
+        <!-- Tricking the smooth scroll to end in the right position. -->
+        <div id="scroll-mobile-hack" class="mobile-spacer">
+          <p style="font-size: 2rem">.</p>
+          <p style="font-size: 2rem">.</p>
+          <p style="font-size: 2rem">.</p>
+          <p style="font-size: 1rem">.</p>
+        </div>
       </div>
     </main>
   </body>
