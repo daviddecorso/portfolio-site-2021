@@ -118,7 +118,7 @@ header a:hover {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 30vh auto;
-  gap: 0 50px;
+  gap: 0 0px;
 }
 
 #self-pic {
@@ -126,6 +126,10 @@ header a:hover {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#self-pic-mobile {
+  display: none;
 }
 
 #experience-title {
@@ -622,13 +626,21 @@ footer {
     display: none;
   }
 
+  #self-pic-mobile {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .about-title {
     font-size: 3.5rem;
   }
 
   #about-content {
     display: block;
-    margin-top: 25vh;
+    margin-top: 17vh;
     margin-left: var(--gutter);
   }
 
@@ -680,5 +692,9 @@ footer {
 
   #exp-container {
     margin-left: 0;
+  }
+
+  #self-pic {
+    display: none;
   }
 }
