@@ -332,6 +332,7 @@ body {
 }
 
 #particles-js {
+  top: 0;
   z-index: -1;
   position: fixed;
   width: 100%;
@@ -593,7 +594,8 @@ footer {
   }
 
   #scroll-mobile-hack {
-    margin-bottom: 40vh;
+    /* margin-bottom: 40vh; */
+    display: none;
   }
 
   .in-touch {
@@ -620,7 +622,7 @@ footer {
   }
 
   #bottom {
-    margin-top: 10vh;
+    display: none;
   }
 
   #self-pic {
@@ -629,7 +631,7 @@ footer {
 
   #self-pic-mobile {
     display: block;
-    width: 400px;
+    width: 80vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
