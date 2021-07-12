@@ -1,5 +1,5 @@
 # Portfolio Website
-Hosted at [daviddecorso.com](https://www.daviddecorso.com/index.html)
+Hosted at [daviddecorso.com](https://www.daviddecorso.com/)
 
 ![Website homepage](https://github.com/daviddecorso/portfolio-site-2021/blob/main/homepage_screenshot.PNG)
 
