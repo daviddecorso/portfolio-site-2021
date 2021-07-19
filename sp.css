@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Swiss721";
+    src: url("/fonts/Swiss-721-BT-Font.ttf");
+    font-display: swap;
+}
+
+.page-title {
+    font-family: Archivo Black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5.5rem;
+    margin-top: 15vh;
+    margin-bottom: 3rem;
+    cursor: default;
+}
+
+.subtitle {
+    font-family: Abel;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.blog-bigimg {
+    height: 40vw;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.blog-content {
+    margin-bottom: 30vh;
+}
+
+.date {
+    font-family: "Swiss721";
+}
+
+.blog-content {
+    margin-left: var(--gutter); 
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 12vh;
+}
+
+.post-text-container {
+    margin-right: calc(var(--gutter) * 4);
+}
+
+.post-title {
+    text-transform: uppercase;
+    font-family: "Swiss721";
+}
+
+.post-text {
+    font-size: 1.3rem;
+    font-family: "Swiss721";
+}
+
+#app-mockup-img {
+    width: 60vw;
+    height: auto;
+}
+
+#app-diagram-img {
+    width: 45vw;
+    height: auto;
+}

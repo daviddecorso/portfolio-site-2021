@@ -1,9 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Archivo+Black&family=Rajdhani:wght@300;400&display=swap");
-
-@font-face {
-  font-family: "Swiss721BT";
-  src: url("fonts/Swiss-721-BT-Font.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Archivo+Black:wght@300;400&display=swap");
 
 :root {
   --gutter: 2vw;
@@ -99,6 +94,14 @@ header a:hover {
   margin-left: calc(var(--gutter) * 2);
 }
 
+#top-project-div {
+  margin-bottom: 40vh;
+}
+
+#bottom-project-div {
+  margin-bottom: 10vh;
+}
+
 #intro-title {
   position: relative;
   margin-top: 30vh;
@@ -107,6 +110,7 @@ header a:hover {
   font-size: 5.5rem;
   display: flex;
   flex-direction: column;
+  cursor: default;
 }
 
 #about-me {
@@ -228,6 +232,18 @@ li {
   max-width: 1100px;
 }
 
+.link-text {
+  font-size: 2rem;
+  font-family: Abel;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: center;
+}
+
+.link-text a {
+  color: var(--text-color);
+}
+
 .intro-body {
   text-align: right;
 
@@ -296,7 +312,7 @@ li {
 }
 
 #cv-text {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .project-div {
@@ -308,9 +324,10 @@ li {
   height: auto;
 }
 
-#covid-ss {
+#docent-ss {
   width: 35vw;
   height: auto;
+  transform: translateY(-100px);
 }
 
 .pi-right {
@@ -522,6 +539,14 @@ footer {
     margin-bottom: 10vh;
   }
 
+  #top-project-div {
+    margin-bottom: 20vh;
+  }
+
+  #bottom-project-div {
+    margin-bottom: 20vh;
+  }
+
   .spacer {
     margin-top: 20vh;
   }
@@ -556,7 +581,7 @@ footer {
     place-content: center;
   }
 
-  #covid-mobile-img {
+  #docent-mobile-img {
     width: 85vw;
   }
 
@@ -566,7 +591,7 @@ footer {
 
   #project-title {
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     margin-bottom: 2rem;
     margin-left: calc((var(--gutter)) * -1);
     margin-right: var(--gutter);

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QR Docent Development Blog">
+    <title>QR Docent App | David DeCorso Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sp.css">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles.json");
+    </script>
+</head>
+<body id="main-content">
+    <div id="particles-js"></div>
+    <header>
+      <h1 class="name-nav center-col">
+        <a href="/">David DeCorso</a>
+      </h1>
+
+      <span class="folio-nav center-col">Portfolio / 2021</span>
+
+      <h1 class="about-nav center-col"><a href="about.html">About</a></h1>
+    </header>
+    <main asscroll-container id="body">
+      <div id="content">
+        <div class="blog-hero">
+            <h2 class="page-title">QR Docent Project</h2>
+            <p class="subtitle">QR Docent is an app that lets people interact with museum exhibits in a more personalized way. This page is documenting the progress being made on the project.</p>
+        </div>
+        <img class="blog-bigimg" src="img/both.png" alt="QR Docent App Mockup on Device">
+        <div class="blog-content">
+            <div class="post">
+                <h2 class="date">[2] - 7/12/21</h2>
+                <div class="post-text-container">
+                  <h2 class="post-title">UI Design</h2>
+                  <p class="post-text">
+                  This week I worked on the UI design for the mobile app.<br /><br />
+
+                  I started by creating a design philosophy for the project. Our team's overall goals for the project are to connect people and museums, and to make museum visits more personalized and impactful for visitors. With this in mind, I also defined how we want the app to be percieved: as modern and innovative as well as simple and approachable. We want people to view this app as easy to use and as a step forwards for interactive museum technology.<br /><br />
+
+                  Using the principle of limited color to direct users. Decided on a purple accent color. Magenta highlight on the camera button to give it unique importance in the design. Want to make the camera button stand out and be "clickable."<br /><br />
+
+                  The design is simple. There isn't much on the screen at one time, and the important options are very visible.<br /><br />
+
+                  Below is the full version of the UI mockup I made for the app. (Click for the full version) Some of the screens in the mockup contain components that museum curators can choose to add to an artist page, but aren't full pages themselves.
+                </p>
+                <a href="img/docent_app_mockup.png"><img id="app-mockup-img" src="img/docent_app_mockup.png" alt="QR Docent App Mockup"></a>
+                </div>
+            </div>
+            <div class="post">
+              <h2 class="date">[1] - 6/29/21</h2>
+              <div class="post-text-container">
+                <h2 class="post-title">System Design</h2>
+                <p class="post-text">
+                  This week our team decided on the tech stack we will be using for the project and on the general system design. Below is a flowchart represeting the design of the system and how users will interact with it:<br /><br />
+                </p>
+                <img id="app-diagram-img" src="img/docent_diagram.png" alt="Context diagram for QR Docent">
+                <p class="post-text">
+                  We will be using React Native to create our cross-platform mobile app. The administrator dashboard will be made with React. Our API will be serverless, hosted on Vercel and written in JavaScript. For our database we are using PostgreSQL.<br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <h2 class="date">[0] - 6/14/21</h2>
+              <div class="post-text-container">
+                <h2 class="post-title">Beginnings</h2>
+                <p class="post-text">
+                  I am currently working on a project for my senior design class called QR Docent.
+                  It is a QR Tagging system for museusms that lets people interact with exhibits in a more personalized way.<br /><br />
+
+                  I am excited to work on this project, because it seems like a great application for QR technology. I also like visiting museums and am excited to be able to improve the experience for other museumgoers.<br /><br />
+
+                  Thank you to sponsor Tom Essa for this opportunity!
+                </p>
+              </div>
+            </div>
+        </div>
+        <footer>
+          <div class="contact">
+            <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+              ><img
+                id="linkedin-img"
+                src="img/LnLogoNoBG.png"
+                alt="David DeCorso's LinkedIn"
+            /></a>
+            <p class="body-text">
+              <a href="mailto:david@daviddecorso.com">david@daviddecorso.com</a>
+            </p>
+            <a id="github-logo" href="https://github.com/daviddecorso/"
+              ><img src="img/github.png" alt="David DeCorso's Github"
+            /></a>
+          </div>
+          <div class="contact-mobile">
+            <div class="mobile-logos">
+              <a href="https://www.linkedin.com/in/david-decorso-226992151/"
+                ><img
+                  id="linkedin-img"
+                  src="img/LnLogoNoBG.png"
+                  alt="David DeCorso's LinkedIn" /></a
+              ><a id="github-logo" href="https://github.com/daviddecorso/"
+                ><img src="img/github.png" alt="David DeCorso's Github"
+              /></a>
+            </div>
+
+            <p class="body-text">
+              <a href="mailto:david@daviddecorso.com">david@daviddecorso.com</a>
+            </p>
+          </div>
+          <h1 class="in-touch">Get in touch</h1>
+        </footer>
+      </div>
+    </main>
+</body>
+<script type="module" src="src/main.js"></script>
+</html>

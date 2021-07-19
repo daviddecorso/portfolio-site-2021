@@ -4,15 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | David DeCorso Personal Webite</title>
+    <meta name="description" content="The Homepage of David DeCorso's Personal Website">
+    <title>Home | David DeCorso Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS.load("particles-js", "particles.json", function () {
-        console.log("Particles loaded.");
-      });
-    </script>
   </head>
   <body id="main-content">
     <div id="particles-js"></div>
@@ -67,14 +61,13 @@
               alt="Screenshot from my InstaTaks project"
             />
           </div>
-          <div class="project-div">
+          <div id="top-project-div" class="project-div">
             <span class="project-subtitle ps-right">InstaTask</span>
             <div class="project-text pt-right">
-              <span class="body-text"
-                ><span class="blue-text">InstaTask</span> is a Web app that
-                imports your Webcourses calendar and alerts you when assignments
-                are due.</span
-              >
+              <span class="body-text">
+                <span class="blue-text">InstaTask</span> imports and notifies users about upcoming
+                assignments from UCF’s online homework system.
+              </span>
               <span class="body-text"
                 ><span class="emphasis-text">Technologies:</span> React,
                 Node.js, Express, MongoDB</span
@@ -110,53 +103,52 @@
           </div>
           <div id="proj-img-mobile-div">
             <img
-              id="covid-mobile-img"
+              id="docent-mobile-img"
               class="proj-img-mobile"
-              src="img/covid-viz-ss.png"
+              src="img/both.png"
               alt="Screenshot from my InstaTaks project"
             />
           </div>
-          <div class="project-div">
-            <span class="project-subtitle">COVID Tweet Analysis</span>
+          <div id="bottom-project-div" class="project-div">
+            <span class="project-subtitle">QR Docent</span>
             <div class="project-text pt-left">
               <span id="cv-text" class="body-text"
-                >This project aims to show which US states are tweeting the most
-                about COVID-19 and whether the number of COVID-related tweets
-                increases with the number of cases.</span
+                >QR Docent is a is a QR code system for museusms that lets people interact with museum exhibits in a more personalized way.</span
               >
               <span class="body-text"
-                ><span class="emphasis-text">Technologies:</span> Tableau,
-                Pandas, Jupyter</span
+                ><span class="emphasis-text">Technologies:</span> React Native, ReactJS, Node.js, PostgreSQL</span
               >
               <span class="body-text"
-                ><span class="emphasis-text">Languages:</span> Python</span
+                ><span class="emphasis-text">Languages:</span> JavaScript, HTML5, CSS</span
               >
-              <div class="logos-div">
-                <a href="https://github.com/daviddecorso/covid-tweet-viz">
-                  <img
-                    class="logo-img"
-                    src="img/github.png"
-                    alt="Github link"
-                  />
-                  <img
-                    class="logo-img"
-                    src="img/GitHub_Logo_White.png"
-                    alt="Github link"
-                  />
-                </a>
+              <div class="link-text">
+                <p><a href="/qr-docent-app.html">Learn more about this project!</a></p>
               </div>
             </div>
             <div>
               <img
-                id="covid-ss"
+                id="docent-ss"
                 class="proj-img pi-right"
-                src="img/covid-viz-ss.png"
+                src="img/both.png"
                 alt="Screenshot from my InstaTask project"
               />
             </div>
           </div>
           <div class="project-div">
             <h2 id="project-title" class="subtitle">Other PROJECTS:</h2>
+            <div class="flex-div">
+              <span class="body-text other-title"
+                ><a href="https://github.com/daviddecorso/BuyAndSell"
+                  >Covid Tweet Analysis:</a
+                ></span
+              >
+              <div class="other-proj">
+                <span class="body-text"
+                  >This project aims to show which US states are tweeting the most about COVID-19 and whether the number of COVID-related tweets increases with the number of cases.</span
+                >
+                <p class="body-text emphasis-text">Python, Tableau, Pandas, Jupyter</p>
+              </div>
+            </div>
             <div class="flex-div">
               <span class="body-text other-title"
                 ><a href="https://github.com/daviddecorso/BuyAndSell"
@@ -180,8 +172,8 @@
               >
               <div class="other-proj">
                 <span class="body-text"
-                  >(In progress) Strategy browser game written in native
-                  JavaScript and HTML5.</span
+                  >Strategy browser game written in native
+                  JavaScript and HTML5. (In progress)</span
                 >
                 <p class="body-text emphasis-text">
                   JavaScript, HTML5 Canvas, CSS
@@ -231,4 +223,8 @@
 
   <script type="module" src="src/main.js"></script>
   <script src="src/hover.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load("particles-js", "particles.json");
+  </script>
 </html>
