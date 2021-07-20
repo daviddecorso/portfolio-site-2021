@@ -70,6 +70,10 @@
     height: auto;
 }
 
+#bottom-blog {
+    margin-top: 12vh;
+}
+
 @media screen and (max-width: 800px) {
     .page-title {
        font-size: 2.8rem; 
@@ -104,5 +108,9 @@
 
     #app-diagram-img {
         width: 90vw;
+    }
+
+    #bottom-blog {
+        display: none;
     }
 }
